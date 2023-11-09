@@ -1,0 +1,127 @@
+/* 共通部分のCSS */
+@charset "utf-8";
+
+body {
+  margin: 100px; /* 余白を追加 */
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 40px; /* アイコンの幅を調整 */
+  height: 40px; /* アイコンの高さを調整 */
+  margin-right: 5px; /* アイコンとテキストの間隔を調整 */
+}
+
+h1 {
+  margin: 10px;
+}
+
+.company-name {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.key-visual {
+  margin-top: 40px; /* セクション間の余白を追加 */
+}
+
+.main-content {
+  margin-top: 40px; /* セクション間の余白を追加 */
+}
+
+.Sub-content{
+  margin-top: 40px; /* セクション間の余白を追加 */
+}
+
+.footer-content {
+  margin-top: 40px; /* セクション間の余白を追加 */
+}
+
+.key-visual-copy{
+  font-size: 30px;
+}
+
+
+.main-image {
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #d2b48c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#message {
+  display: none; /* 初めは非表示 */
+  position: fixed; /* メッセージを画面の中央に固定 */
+  top: 50%; /* 上端を中央に配置 */
+  left: 50%; /* 左端を中央に配置 */
+  transform: translate(-50%, -50%); /* 中央揃え */
+  background-color: #333; /* 背景色 */
+  color: #fff; /* テキスト色 */
+  padding: 20px; /* 内側の余白 */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 影を追加 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* style.css */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto; /* アスペクト比を保つために自動調整 */
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0.4;
+  }
+  100% {
+      opacity: 1;
+  }
+}
